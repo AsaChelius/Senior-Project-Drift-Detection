@@ -1,0 +1,26 @@
+[2025-09-21T20:40:34Z] Starting realtime monitor (every 20s)
+[2025-09-21T20:40:34Z] Using existing snapshot as previous: baseline_2025-09-20T04-43-03Z.json
+[2025-09-21T20:40:39Z] Captured snapshot: baseline_2025-09-21T20-40-39Z.json
+[2025-09-21T20:40:39Z] Drift detected between baseline_2025-09-20T04-43-03Z.json and baseline_2025-09-21T20-40-39Z.json:
+[2025-09-21T20:40:39Z]   
+[2025-09-21T20:40:39Z]   Done.
+[2025-09-21T20:41:03Z] Captured snapshot: baseline_2025-09-21T20-41-03Z.json
+[2025-09-21T20:41:03Z] Drift detected between baseline_2025-09-21T20-40-39Z.json and baseline_2025-09-21T20-41-03Z.json:
+[2025-09-21T20:41:03Z]   
+[2025-09-21T20:41:03Z]   Done.
+[2025-09-21T20:41:27Z] Captured snapshot: baseline_2025-09-21T20-41-27Z.json
+[2025-09-21T20:41:27Z] Drift detected between baseline_2025-09-21T20-41-03Z.json and baseline_2025-09-21T20-41-27Z.json:
+[2025-09-21T20:41:27Z]   
+[2025-09-21T20:41:27Z]   Done.
+[2025-09-21T20:41:35Z] Realtime monitor stopped by user
+[2025-09-21T20:57:08Z] Starting realtime monitor (every 20s)
+[2025-09-21T20:57:08Z] Using existing snapshot as previous: baseline_2025-09-21T20-41-27Z.json
+[2025-09-21T20:57:12Z] Captured snapshot: baseline_2025-09-21T20-57-12Z.json
+[2025-09-21T20:57:12Z] Drift detected between baseline_2025-09-21T20-41-27Z.json and baseline_2025-09-21T20-57-12Z.json (categories unknown)
+[2025-09-21T20:57:12Z]   
+[2025-09-21T20:57:12Z]   Done.
+[2025-09-21T20:57:36Z] Captured snapshot: baseline_2025-09-21T20-57-36Z.json
+[2025-09-21T20:57:36Z] Drift detected between baseline_2025-09-21T20-57-12Z.json and baseline_2025-09-21T20-57-36Z.json (categories unknown)
+[2025-09-21T20:57:36Z]   
+[2025-09-21T20:57:36Z]   Done.
+[2025-09-21T20:57:47Z] Realtime monitor stopped by user

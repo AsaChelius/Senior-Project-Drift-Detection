@@ -1,0 +1,146 @@
+{
+  "ec2": {
+    "SecurityGroups": [
+      {
+        "Description": "launch-wizard-1 created 2025-09-14T20:06:05.776Z",
+        "GroupId": "sg-0972d1d5f6ce9f7c8",
+        "GroupName": "launch-wizard-1",
+        "InboundRules": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Desc": null,
+            "FromPort": 22,
+            "Protocol": "tcp",
+            "ToPort": 22
+          }
+        ],
+        "OutboundRules": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "ToPort": null
+          }
+        ],
+        "Tags": {},
+        "VpcId": "vpc-01a69b393652e1851"
+      },
+      {
+        "Description": "default VPC security group",
+        "GroupId": "sg-0a5b796cbac5ccc55",
+        "GroupName": "default",
+        "InboundRules": [
+          {
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "SourceGroupId": "sg-0a5b796cbac5ccc55",
+            "ToPort": null
+          }
+        ],
+        "OutboundRules": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "ToPort": null
+          }
+        ],
+        "Tags": {},
+        "VpcId": "vpc-01a69b393652e1851"
+      },
+      {
+        "Description": "Allows SSH Access only from my IP",
+        "GroupId": "sg-0d7ca9a3eb96182c0",
+        "GroupName": "uhsandbox-security-01",
+        "InboundRules": [
+          {
+            "CidrIp": "72.234.224.163/32",
+            "Desc": null,
+            "FromPort": 22,
+            "Protocol": "tcp",
+            "ToPort": 22
+          }
+        ],
+        "OutboundRules": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "ToPort": null
+          }
+        ],
+        "Tags": {},
+        "VpcId": "vpc-01a69b393652e1851"
+      }
+    ]
+  },
+  "iam": {
+    "Users": [
+      {
+        "Arn": "arn:aws:iam::987042257148:user/Test",
+        "AttachedPolicies": [
+          "arn:aws:iam::aws:policy/SecurityAudit"
+        ],
+        "CreateDate": "2025-09-14T19:34:56Z",
+        "Groups": [],
+        "InlinePolicies": [],
+        "UserName": "Test"
+      }
+    ]
+  },
+  "identity": {
+    "account_id": "987042257148",
+    "arn": "arn:aws:iam::987042257148:user/Test",
+    "user_id": "AIDA6LUCNTD6GATW2B7NY"
+  },
+  "meta": {
+    "captured_at_utc": "2025-09-21T20-57-08Z",
+    "service_versions": {
+      "boto3": "1.40.35"
+    }
+  },
+  "s3": {
+    "Buckets": [
+      {
+        "Encryption": {
+          "Rules": [
+            {
+              "ApplyServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              },
+              "BucketKeyEnabled": true
+            }
+          ]
+        },
+        "Location": null,
+        "Name": "uhsandbox-bucket-01",
+        "Policy": null,
+        "PublicAccessBlock": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        },
+        "Versioning": {
+          "ResponseMetadata": {
+            "HTTPHeaders": {
+              "date": "Sun, 21 Sep 2025 20:57:12 GMT",
+              "server": "AmazonS3",
+              "transfer-encoding": "chunked",
+              "x-amz-id-2": "l36Lp6OKQefEv50KAfWJd1mKK2o9DKAr8ZAkDf4b8y7eo6hXlPOJRtQ0deJ7S3Wh+OpHDUdCAiU=",
+              "x-amz-request-id": "HEACERZ0NX8TV5XS"
+            },
+            "HTTPStatusCode": 200,
+            "HostId": "l36Lp6OKQefEv50KAfWJd1mKK2o9DKAr8ZAkDf4b8y7eo6hXlPOJRtQ0deJ7S3Wh+OpHDUdCAiU=",
+            "RequestId": "HEACERZ0NX8TV5XS",
+            "RetryAttempts": 0
+          }
+        }
+      }
+    ]
+  }
+}

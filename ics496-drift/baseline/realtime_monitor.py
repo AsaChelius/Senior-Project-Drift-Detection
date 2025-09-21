@@ -47,37 +47,6 @@ def run_compare(old, new):
     proc = subprocess.run(["python3", "compare_baseline.py", old, new], capture_output=True, text=True)
     return proc.returncode, proc.stdout, proc.stderr
 
-def summarize_drift_categories(compare_output: str):
-    """Return a list of drift categories found in the compare output.
-
-    Categories detected:
-      - WARNING (snapshots/accounts warning)
-      - IAM
-      - S3
-      - EC2-SG (EC2 Security Group changes)
-    """
-    if not compare_output:
-        return []
-
-    text = compare_output.lower()
-    cats = []
-    if "warning" in text or "snapshots are from different aws accounts" in text:
-        cats.append("WARNING")
-    if "iam changes" in text or "iam" in text:
-        # Be conservative: only add IAM if we see the phrase 'iam changes' or section header
-        if "iam changes" in text:
-            cats.append("IAM")
-    if "s3 changes" in text or "s3" in text:
-        if "s3 changes" in text:
-            cats.append("S3")
-    # EC2 security group wording may vary; look for 'security group' and 'sg '
-    if "security group changes" in text or "security group" in text or "sg added" in text or "sg removed" in text:
-        cats.append("EC2-SG")
-
-    # Keep order stable
-    ordered = [c for c in ("WARNING", "IAM", "S3", "EC2-SG") if c in cats]
-    return ordered
-
 """ LOG FILE this is where we can print out the monitoring system  """
 def log(msg):
     ts = now_ts()
@@ -96,6 +65,11 @@ def main():
         prev = files[-1]
         log(f"Using existing snapshot as previous: {prev}")
 
+    # If there's a Baseline.json in the directory, prefer that as the canonical baseline
+    baseline_file = 'Baseline.json'
+    if os.path.exists(baseline_file):
+        log(f"Found canonical baseline: {baseline_file}")
+
     try:
         while True:
             fname, rc, sout, serr = run_enumerate()
@@ -111,25 +85,32 @@ def main():
 
             log(f"Captured snapshot: {fname}")
 
-            if prev:
-                rc2, sout2, serr2 = run_compare(prev, fname)
+            # Choose compare target: prefer Baseline.json when available, otherwise use prev
+            compare_target = baseline_file if os.path.exists(baseline_file) else prev
+            if compare_target:
+                rc2, sout2, serr2 = run_compare(compare_target, fname)
                 if rc2 != 0:
                     # compare may return non-zero for usage errors; still capture output
                     log(f"compare_baseline.py returned rc={rc2}. stderr: {serr2.strip()}")
 
                 # If compare printed anything other than trivial messages, log it
                 if sout2 and sout2.strip():
-                    cats = summarize_drift_categories(sout2)
-                    if cats:
-                        log(f"Drift detected between {prev} and {fname}: categories: {', '.join(cats)}")
-                    else:
-                        log(f"Drift detected between {prev} and {fname} (categories unknown)")
-                    # Then log the detailed output lines
+                    log(f"Drift detected between {prev} and {fname}:")
+                    # Log stdout from compare with a header and line-by-line
+                    log("--- compare stdout begin ---")
                     for line in sout2.splitlines():
                         log("  " + line)
+                    log("--- compare stdout end ---")
+                    # Also log stderr if any
+                    if serr2 and serr2.strip():
+                        log("--- compare stderr begin ---")
+                        for line in serr2.splitlines():
+                            log("  " + line)
+                        log("--- compare stderr end ---")
                 else:
                     log(f"No drift detected between {prev} and {fname}")
 
+            # Do not update the canonical baseline; keep prev as the latest snapshot
             prev = fname
 
             # keep snapshots manageable: keep last 10

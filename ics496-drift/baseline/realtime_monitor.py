@@ -16,6 +16,7 @@ import time
 import os
 import sys
 import shutil
+import json
 import select
 from datetime import datetime
 
@@ -132,11 +133,59 @@ def main():
                     if rlist:
                         resp = sys.stdin.readline().strip().lower()
                         if resp in ("y", "yes"):
-                            try:
-                                shutil.copyfile(fname, baseline_file)
-                                log(f"Updated canonical baseline: {baseline_file} <- {fname}")
-                            except Exception as e:
-                                log(f"Failed to update baseline: {e}")
+                                try:
+                                    # Load the new snapshot and the existing baseline (if any)
+                                    with open(fname, 'r', encoding='utf-8') as fnew:
+                                        new_snap = json.load(fnew)
+
+                                    baseline_exists = os.path.exists(baseline_file)
+                                    if baseline_exists:
+                                        with open(baseline_file, 'r', encoding='utf-8') as fb:
+                                            try:
+                                                baseline = json.load(fb)
+                                            except Exception:
+                                                baseline = {}
+                                    else:
+                                        baseline = {}
+
+                                    # Present available top-level categories and prompt the user
+                                    avail = sorted(list(new_snap.keys()))
+                                    print()
+                                    print("Available categories in the new snapshot:")
+                                    for k in avail:
+                                        print(f"  - {k}")
+                                    print("Enter a comma-separated list of categories to copy into the baseline, or 'all' to replace the entire baseline.")
+                                    print(f"Waiting up to {SLEEP_SECONDS}s for category selection: ", end='', flush=True)
+                                    rlist2, _, _ = select.select([sys.stdin], [], [], SLEEP_SECONDS)
+                                    if not rlist2:
+                                        log(f"No category selection within {SLEEP_SECONDS}s; baseline unchanged")
+                                    else:
+                                        cats = sys.stdin.readline().strip()
+                                        if not cats:
+                                            log("Empty category selection; baseline unchanged")
+                                        else:
+                                            if cats.strip().lower() == 'all':
+                                                # Replace entire baseline with new snapshot
+                                                with open(baseline_file, 'w', encoding='utf-8') as fbw:
+                                                    json.dump(new_snap, fbw, indent=2, sort_keys=True)
+                                                log(f"Replaced entire baseline with snapshot: {fname}")
+                                            else:
+                                                selected = [c.strip() for c in cats.split(',') if c.strip()]
+                                                updated = []
+                                                for c in selected:
+                                                    if c in new_snap:
+                                                        baseline[c] = new_snap[c]
+                                                        updated.append(c)
+                                                    else:
+                                                        log(f"Category not found in snapshot: {c}")
+                                                if updated:
+                                                    with open(baseline_file, 'w', encoding='utf-8') as fbw:
+                                                        json.dump(baseline, fbw, indent=2, sort_keys=True)
+                                                    log(f"Updated baseline categories: {', '.join(updated)} from {fname}")
+                                                else:
+                                                    log("No valid categories selected; baseline unchanged")
+                                except Exception as e:
+                                    log(f"Failed to update baseline: {e}")
                         else:
                             log("Baseline unchanged by user choice")
                     else:

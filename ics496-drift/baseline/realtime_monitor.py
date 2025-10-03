@@ -14,6 +14,9 @@ non-empty output is logged to `realtime_monitor.log` along with a timestamp.
 import subprocess
 import time
 import os
+import sys
+import shutil
+import select
 from datetime import datetime
 
 SNAP_GLOB = "baseline_*.json"
@@ -113,17 +116,41 @@ def main():
             # Do not update the canonical baseline; keep prev as the latest snapshot
             prev = fname
 
-            # keep snapshots manageable: keep last 10
+            # Retain all snapshots: do not delete old snapshots automatically.
+            # Previously the script trimmed snapshots to the last 10 files.
+            # That behavior was removed so all baseline_*.json files are kept.
             snapshots = sorted([f for f in os.listdir('.') if f.startswith('baseline_') and f.endswith('.json')], key=os.path.getmtime)
-            while len(snapshots) > 10:
-                rm = snapshots.pop(0)
-                try:
-                    os.remove(rm)
-                    log(f"Removed old snapshot: {rm}")
-                except Exception as e:
-                    log(f"Failed to remove {rm}: {e}")
+            log(f"Snapshot count: {len(snapshots)} (retained)")
 
-            time.sleep(SLEEP_SECONDS)
+            # Offer interactive update of the canonical Baseline.json to the new snapshot
+            try:
+                # Interactive: give the user up to SLEEP_SECONDS to respond; do not sleep additionally
+                if sys.stdin.isatty():
+                    # Prompt and wait up to SLEEP_SECONDS for input
+                    print(f"Update '{baseline_file}' to '{fname}'? [y/N]: ", end='', flush=True)
+                    rlist, _, _ = select.select([sys.stdin], [], [], SLEEP_SECONDS)
+                    if rlist:
+                        resp = sys.stdin.readline().strip().lower()
+                        if resp in ("y", "yes"):
+                            try:
+                                shutil.copyfile(fname, baseline_file)
+                                log(f"Updated canonical baseline: {baseline_file} <- {fname}")
+                            except Exception as e:
+                                log(f"Failed to update baseline: {e}")
+                        else:
+                            log("Baseline unchanged by user choice")
+                    else:
+                        log(f"No response within {SLEEP_SECONDS}s; baseline unchanged")
+                    # do not call time.sleep() here — the select timeout acts as the interval
+                else:
+                    log("Non-interactive session: baseline update prompt skipped")
+                    # Non-interactive runs should sleep normally between snapshots
+                    time.sleep(SLEEP_SECONDS)
+            except Exception as e:
+                # Protect the monitor loop from unexpected input errors
+                log(f"Error during baseline update prompt: {e}")
+                # On error, wait a bit before next snapshot to avoid tight loop
+                time.sleep(SLEEP_SECONDS)
     except KeyboardInterrupt:
         log("Realtime monitor stopped by user")
 

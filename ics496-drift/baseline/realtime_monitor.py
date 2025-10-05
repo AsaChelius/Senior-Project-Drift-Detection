@@ -19,6 +19,12 @@ import shutil
 import json
 import select
 from datetime import datetime
+from datetime import timedelta
+import re
+try:
+    from cloudtrail_fetch import find_events_for_keywords
+except Exception:
+    find_events_for_keywords = None
 
 SNAP_GLOB = "baseline_*.json"
 SLEEP_SECONDS = 20
@@ -102,6 +108,24 @@ def main():
                     log(f"Drift detected between {prev} and {fname}:")
                     # Log stdout from compare with a header and line-by-line
                     log("--- compare stdout begin ---")
+                    # Collect candidate keywords from the compare output for CloudTrail lookup
+                    compare_text = sout2
+                    keywords = set()
+                    # find security group ids like sg-xxxxxxxx
+                    for m in re.findall(r"sg-[0-9a-fA-F]+", compare_text):
+                        keywords.add(m)
+                    # find bucket names (simple heuristic: words containing 'bucket' or ending with 'bucket')
+                    for line in compare_text.splitlines():
+                        for token in line.split():
+                            if 'bucket' in token.lower() or token.startswith('arn:aws:s3'):
+                                # strip punctuation
+                                kw = token.strip('[],()"')
+                                keywords.add(kw)
+                    # find IAM usernames (simple heuristic: words without spaces and alphanumeric with hyphen/underscore)
+                    for m in re.findall(r"[A-Za-z0-9_\-]+", compare_text):
+                        # avoid very short tokens
+                        if len(m) > 2 and m.lower() not in ('added','removed','was','now','sg','bucket','s3','iam','ec2','aws'):
+                            keywords.add(m)
                     for line in sout2.splitlines():
                         log("  " + line)
                     log("--- compare stdout end ---")
@@ -111,6 +135,29 @@ def main():
                         for line in serr2.splitlines():
                             log("  " + line)
                         log("--- compare stderr end ---")
+                    # If cloudtrail_fetch is available, try to find related CloudTrail events
+                    if find_events_for_keywords:
+                        try:
+                            # small time window around now
+                            end_t = datetime.utcnow()
+                            start_t = end_t - timedelta(minutes=10)
+                            kws = [k for k in keywords if k]
+                            if kws:
+                                log(f"Searching CloudTrail for keywords: {', '.join(sorted(kws)[:10])}...")
+                                events = find_events_for_keywords(kws, start_t, end_t)
+                                if events:
+                                    log(f"Found {len(events)} CloudTrail event(s) related to the drift:")
+                                    for ev in events[:10]:
+                                        u = ev.get('userIdentity') or {}
+                                        uname = u.get('userName') or u.get('arn') or str(u)
+                                        ip = ev.get('sourceIPAddress')
+                                        en = ev.get('eventName')
+                                        et = ev.get('eventTime')
+                                        log(f"  - {et} {en} by {uname} from {ip}")
+                                else:
+                                    log("No matching CloudTrail events found in the recent window")
+                        except Exception as e:
+                            log(f"CloudTrail lookup failed: {e}")
                 else:
                     log(f"No drift detected between {prev} and {fname}")
 

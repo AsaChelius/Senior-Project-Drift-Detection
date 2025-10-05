@@ -2,37 +2,12 @@
   "ec2": {
     "SecurityGroups": [
       {
-        "Description": "default VPC security group",
-        "GroupId": "sg-0f0da5ce01c608a03",
-        "GroupName": "default",
-        "InboundRules": [
-          {
-            "Desc": null,
-            "FromPort": null,
-            "Protocol": "-1",
-            "SourceGroupId": "sg-0f0da5ce01c608a03",
-            "ToPort": null
-          }
-        ],
-        "OutboundRules": [
-          {
-            "CidrIp": "0.0.0.0/0",
-            "Desc": null,
-            "FromPort": null,
-            "Protocol": "-1",
-            "ToPort": null
-          }
-        ],
-        "Tags": {},
-        "VpcId": "vpc-0309f5a14e1ffc9c8"
-      },
-      {
-        "Description": "launch-wizard-1 created 2025-09-17T22:01:50.433Z",
-        "GroupId": "sg-05d8840964f1070c1",
+        "Description": "launch-wizard-1 created 2025-09-14T20:06:05.776Z",
+        "GroupId": "sg-0972d1d5f6ce9f7c8",
         "GroupName": "launch-wizard-1",
         "InboundRules": [
           {
-            "CidrIp": "72.130.155.122/32",
+            "CidrIp": "0.0.0.0/0",
             "Desc": null,
             "FromPort": 22,
             "Protocol": "tcp",
@@ -49,7 +24,57 @@
           }
         ],
         "Tags": {},
-        "VpcId": "vpc-0309f5a14e1ffc9c8"
+        "VpcId": "vpc-01a69b393652e1851"
+      },
+      {
+        "Description": "default VPC security group",
+        "GroupId": "sg-0a5b796cbac5ccc55",
+        "GroupName": "default",
+        "InboundRules": [
+          {
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "SourceGroupId": "sg-0a5b796cbac5ccc55",
+            "ToPort": null
+          }
+        ],
+        "OutboundRules": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "ToPort": null
+          }
+        ],
+        "Tags": {},
+        "VpcId": "vpc-01a69b393652e1851"
+      },
+      {
+        "Description": "Allows SSH Access only from my IP",
+        "GroupId": "sg-0d7ca9a3eb96182c0",
+        "GroupName": "uhsandbox-security-01",
+        "InboundRules": [
+          {
+            "CidrIp": "72.234.224.163/32",
+            "Desc": null,
+            "FromPort": 22,
+            "Protocol": "tcp",
+            "ToPort": 22
+          }
+        ],
+        "OutboundRules": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "ToPort": null
+          }
+        ],
+        "Tags": {},
+        "VpcId": "vpc-01a69b393652e1851"
       }
     ]
   },
@@ -68,14 +93,14 @@
     ]
   },
   "identity": {
-    "account_id": "289956717132",
-    "arn": "arn:aws:iam::289956717132:user/sandbox-user",
-    "user_id": "AIDAUHAWEMJGPGEUWMOSS"
+    "account_id": "987042257148",
+    "arn": "arn:aws:iam::987042257148:user/Test",
+    "user_id": "AIDA6LUCNTD6GATW2B7NY"
   },
   "meta": {
-    "captured_at_utc": "2025-09-18T02-01-05Z",
+    "captured_at_utc": "2025-10-05T21-51-16Z",
     "service_versions": {
-      "boto3": "1.40.33"
+      "boto3": "1.40.35"
     }
   },
   "s3": {
@@ -91,25 +116,9 @@
             }
           ]
         },
-        "Location": "us-east-2",
-        "Name": "sandbox-bucket-asa32",
-        "Policy": {
-          "Statement": [
-            {
-              "Action": "s3:*",
-              "Effect": "Allow",
-              "Principal": {
-                "AWS": "arn:aws:iam::289956717132:user/sandbox-user"
-              },
-              "Resource": [
-                "arn:aws:s3:::sandbox-bucket-asa32",
-                "arn:aws:s3:::sandbox-bucket-asa32/*"
-              ],
-              "Sid": "AllowUserAccess"
-            }
-          ],
-          "Version": "2012-10-17"
-        },
+        "Location": null,
+        "Name": "uhsandbox-bucket-01",
+        "Policy": null,
         "PublicAccessBlock": {
           "BlockPublicAcls": true,
           "BlockPublicPolicy": true,
@@ -119,15 +128,15 @@
         "Versioning": {
           "ResponseMetadata": {
             "HTTPHeaders": {
-              "date": "Thu, 18 Sep 2025 02:01:10 GMT",
+              "date": "Sun, 05 Oct 2025 21:51:20 GMT",
               "server": "AmazonS3",
               "transfer-encoding": "chunked",
-              "x-amz-id-2": "LzMO7Lf35hFUF2R300/q3A1WKTqpezbJI1o3esUCqTdyVcMtqHnKuhNCFlpisoiIGGajZvkGDzoON6cb3qeuCw==",
-              "x-amz-request-id": "AKFHCSZZTY9TMQ0V"
+              "x-amz-id-2": "QytqQwygi8arZfRlzvGoFDfTyAt10E6iCZlic8kZOmGOJTbNa4h3OYeVrEDsQ4AQZit4/lWtVvM86+RvvKgFB5BwCtsDxjTa",
+              "x-amz-request-id": "D8HRA7ZNQNZ7WFZA"
             },
             "HTTPStatusCode": 200,
-            "HostId": "LzMO7Lf35hFUF2R300/q3A1WKTqpezbJI1o3esUCqTdyVcMtqHnKuhNCFlpisoiIGGajZvkGDzoON6cb3qeuCw==",
-            "RequestId": "AKFHCSZZTY9TMQ0V",
+            "HostId": "QytqQwygi8arZfRlzvGoFDfTyAt10E6iCZlic8kZOmGOJTbNa4h3OYeVrEDsQ4AQZit4/lWtVvM86+RvvKgFB5BwCtsDxjTa",
+            "RequestId": "D8HRA7ZNQNZ7WFZA",
             "RetryAttempts": 0
           }
         }

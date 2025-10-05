@@ -4104,3 +4104,265 @@ ModuleNotFoundError: No module named 'boto3'
 [2025-10-03T06:00:15Z] Snapshot count: 1 (retained)
 [2025-10-03T06:00:38Z] No category selection within 20s; baseline unchanged
 [2025-10-03T06:00:44Z] Realtime monitor stopped by user
+[2025-10-05T21:31:57Z] Starting realtime monitor (every 20s)
+[2025-10-05T21:31:57Z] Found canonical baseline: Baseline.json
+[2025-10-05T21:32:01Z] Captured snapshot: baseline_2025-10-05T21-32-01Z.json
+[2025-10-05T21:32:01Z] Drift detected between None and baseline_2025-10-05T21-32-01Z.json:
+[2025-10-05T21:32:01Z] --- compare stdout begin ---
+[2025-10-05T21:32:01Z]   
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]   WARNING
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:32:01Z]   
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]   IAM changes
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]     - User added: Test
+[2025-10-05T21:32:01Z]     - User removed: sandbox-user
+[2025-10-05T21:32:01Z]   
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]   S3 changes
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:32:01Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:32:01Z]   
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]   EC2 Security Group changes
+[2025-10-05T21:32:01Z]   ================================================================================
+[2025-10-05T21:32:01Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:32:01Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:32:01Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:32:01Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:32:01Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:32:01Z]   
+[2025-10-05T21:32:01Z]   Done.
+[2025-10-05T21:32:01Z] --- compare stdout end ---
+[2025-10-05T21:32:01Z] Snapshot count: 1 (retained)
+[2025-10-05T21:32:13Z] Updated baseline categories: iam from baseline_2025-10-05T21-32-01Z.json
+[2025-10-05T21:32:17Z] Captured snapshot: baseline_2025-10-05T21-32-17Z.json
+[2025-10-05T21:32:17Z] Drift detected between baseline_2025-10-05T21-32-01Z.json and baseline_2025-10-05T21-32-17Z.json:
+[2025-10-05T21:32:17Z] --- compare stdout begin ---
+[2025-10-05T21:32:17Z]   
+[2025-10-05T21:32:17Z]   ================================================================================
+[2025-10-05T21:32:17Z]   WARNING
+[2025-10-05T21:32:17Z]   ================================================================================
+[2025-10-05T21:32:17Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:32:17Z]   
+[2025-10-05T21:32:17Z]   ================================================================================
+[2025-10-05T21:32:17Z]   S3 changes
+[2025-10-05T21:32:17Z]   ================================================================================
+[2025-10-05T21:32:17Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:32:17Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:32:17Z]   
+[2025-10-05T21:32:17Z]   ================================================================================
+[2025-10-05T21:32:17Z]   EC2 Security Group changes
+[2025-10-05T21:32:17Z]   ================================================================================
+[2025-10-05T21:32:17Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:32:17Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:32:17Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:32:17Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:32:17Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:32:17Z]   
+[2025-10-05T21:32:17Z]   Done.
+[2025-10-05T21:32:17Z] --- compare stdout end ---
+[2025-10-05T21:32:17Z] Snapshot count: 2 (retained)
+[2025-10-05T21:32:37Z] No response within 20s; baseline unchanged
+[2025-10-05T21:32:41Z] Captured snapshot: baseline_2025-10-05T21-32-41Z.json
+[2025-10-05T21:32:41Z] Drift detected between baseline_2025-10-05T21-32-17Z.json and baseline_2025-10-05T21-32-41Z.json:
+[2025-10-05T21:32:41Z] --- compare stdout begin ---
+[2025-10-05T21:32:41Z]   
+[2025-10-05T21:32:41Z]   ================================================================================
+[2025-10-05T21:32:41Z]   WARNING
+[2025-10-05T21:32:41Z]   ================================================================================
+[2025-10-05T21:32:41Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:32:41Z]   
+[2025-10-05T21:32:41Z]   ================================================================================
+[2025-10-05T21:32:41Z]   S3 changes
+[2025-10-05T21:32:41Z]   ================================================================================
+[2025-10-05T21:32:41Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:32:41Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:32:41Z]   
+[2025-10-05T21:32:41Z]   ================================================================================
+[2025-10-05T21:32:41Z]   EC2 Security Group changes
+[2025-10-05T21:32:41Z]   ================================================================================
+[2025-10-05T21:32:41Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:32:41Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:32:41Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:32:41Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:32:41Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:32:41Z]   
+[2025-10-05T21:32:41Z]   Done.
+[2025-10-05T21:32:41Z] --- compare stdout end ---
+[2025-10-05T21:32:41Z] Snapshot count: 3 (retained)
+[2025-10-05T21:32:41Z] Realtime monitor stopped by user
+[2025-10-05T21:41:04Z] Starting realtime monitor (every 20s)
+[2025-10-05T21:41:04Z] Found canonical baseline: Baseline.json
+[2025-10-05T21:41:08Z] Captured snapshot: baseline_2025-10-05T21-41-08Z.json
+[2025-10-05T21:41:08Z] Drift detected between None and baseline_2025-10-05T21-41-08Z.json:
+[2025-10-05T21:41:08Z] --- compare stdout begin ---
+[2025-10-05T21:41:08Z]   
+[2025-10-05T21:41:08Z]   ================================================================================
+[2025-10-05T21:41:08Z]   WARNING
+[2025-10-05T21:41:08Z]   ================================================================================
+[2025-10-05T21:41:08Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:41:08Z]   
+[2025-10-05T21:41:08Z]   ================================================================================
+[2025-10-05T21:41:08Z]   S3 changes
+[2025-10-05T21:41:08Z]   ================================================================================
+[2025-10-05T21:41:08Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:41:08Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:41:08Z]   
+[2025-10-05T21:41:08Z]   ================================================================================
+[2025-10-05T21:41:08Z]   EC2 Security Group changes
+[2025-10-05T21:41:08Z]   ================================================================================
+[2025-10-05T21:41:08Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:41:08Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:41:08Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:41:08Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:41:08Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:41:08Z]   
+[2025-10-05T21:41:08Z]   Done.
+[2025-10-05T21:41:08Z] --- compare stdout end ---
+[2025-10-05T21:41:08Z] Searching CloudTrail for keywords: Bucket, Done, Group, Security, Snapshots, WARNING, accounts, are, changes, different...
+[2025-10-05T21:41:09Z] Found 24 CloudTrail event(s) related to the drift:
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:41Z DescribeSecurityGroups by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:40Z GetBucketPublicAccessBlock by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:40Z GetBucketVersioning by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:40Z GetBucketPolicy by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:40Z GetBucketEncryption by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:39Z GetBucketLocation by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:39Z ListBuckets by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:38Z ListGroupsForUser by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:17Z DescribeSecurityGroups by Test from 72.234.224.163
+[2025-10-05T21:41:09Z]   - 2025-10-05T21:32:16Z GetBucketPolicy by Test from 72.234.224.163
+[2025-10-05T21:41:09Z] Snapshot count: 1 (retained)
+[2025-10-05T21:41:29Z] No response within 20s; baseline unchanged
+[2025-10-05T21:41:33Z] Captured snapshot: baseline_2025-10-05T21-41-33Z.json
+[2025-10-05T21:41:33Z] Drift detected between baseline_2025-10-05T21-41-08Z.json and baseline_2025-10-05T21-41-33Z.json:
+[2025-10-05T21:41:33Z] --- compare stdout begin ---
+[2025-10-05T21:41:33Z]   
+[2025-10-05T21:41:33Z]   ================================================================================
+[2025-10-05T21:41:33Z]   WARNING
+[2025-10-05T21:41:33Z]   ================================================================================
+[2025-10-05T21:41:33Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:41:33Z]   
+[2025-10-05T21:41:33Z]   ================================================================================
+[2025-10-05T21:41:33Z]   S3 changes
+[2025-10-05T21:41:33Z]   ================================================================================
+[2025-10-05T21:41:33Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:41:33Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:41:33Z]   
+[2025-10-05T21:41:33Z]   ================================================================================
+[2025-10-05T21:41:33Z]   EC2 Security Group changes
+[2025-10-05T21:41:33Z]   ================================================================================
+[2025-10-05T21:41:33Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:41:33Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:41:33Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:41:33Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:41:33Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:41:33Z]   
+[2025-10-05T21:41:33Z]   Done.
+[2025-10-05T21:41:33Z] --- compare stdout end ---
+[2025-10-05T21:41:33Z] Searching CloudTrail for keywords: Bucket, Done, Group, Security, Snapshots, WARNING, accounts, are, changes, different...
+[2025-10-05T21:41:33Z] Realtime monitor stopped by user
+[2025-10-05T21:51:16Z] Starting realtime monitor (every 20s)
+[2025-10-05T21:51:16Z] Found canonical baseline: Baseline.json
+[2025-10-05T21:51:20Z] Captured snapshot: baseline_2025-10-05T21-51-20Z.json
+[2025-10-05T21:51:20Z] Drift detected between None and baseline_2025-10-05T21-51-20Z.json:
+[2025-10-05T21:51:20Z] --- compare stdout begin ---
+[2025-10-05T21:51:20Z]   
+[2025-10-05T21:51:20Z]   ================================================================================
+[2025-10-05T21:51:20Z]   WARNING
+[2025-10-05T21:51:20Z]   ================================================================================
+[2025-10-05T21:51:20Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:51:20Z]   
+[2025-10-05T21:51:20Z]   ================================================================================
+[2025-10-05T21:51:20Z]   S3 changes
+[2025-10-05T21:51:20Z]   ================================================================================
+[2025-10-05T21:51:20Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:51:20Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:51:20Z]   
+[2025-10-05T21:51:20Z]   ================================================================================
+[2025-10-05T21:51:20Z]   EC2 Security Group changes
+[2025-10-05T21:51:20Z]   ================================================================================
+[2025-10-05T21:51:20Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:51:20Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:51:20Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:51:20Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:51:20Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:51:20Z]   
+[2025-10-05T21:51:20Z]   Done.
+[2025-10-05T21:51:20Z] --- compare stdout end ---
+[2025-10-05T21:51:20Z] Searching CloudTrail for keywords: Bucket, Done, Group, Security, Snapshots, WARNING, accounts, are, changes, different...
+[2025-10-05T21:51:21Z] Found 8 CloudTrail event(s) related to the drift:
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:33Z GetBucketVersioning by Test from 72.234.224.163
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:33Z DescribeSecurityGroups by Test from 72.234.224.163
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:32Z GetBucketPolicy by Test from 72.234.224.163
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:32Z GetBucketLocation by Test from 72.234.224.163
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:32Z GetBucketEncryption by Test from 72.234.224.163
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:32Z GetBucketPublicAccessBlock by Test from 72.234.224.163
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:32Z ListBuckets by Test from 72.234.224.163
+[2025-10-05T21:51:21Z]   - 2025-10-05T21:41:31Z ListGroupsForUser by Test from 72.234.224.163
+[2025-10-05T21:51:21Z] Snapshot count: 1 (retained)
+[2025-10-05T21:51:41Z] No response within 20s; baseline unchanged
+[2025-10-05T21:51:45Z] Captured snapshot: baseline_2025-10-05T21-51-45Z.json
+[2025-10-05T21:51:45Z] Drift detected between baseline_2025-10-05T21-51-20Z.json and baseline_2025-10-05T21-51-45Z.json:
+[2025-10-05T21:51:45Z] --- compare stdout begin ---
+[2025-10-05T21:51:45Z]   
+[2025-10-05T21:51:45Z]   ================================================================================
+[2025-10-05T21:51:45Z]   WARNING
+[2025-10-05T21:51:45Z]   ================================================================================
+[2025-10-05T21:51:45Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:51:45Z]   
+[2025-10-05T21:51:45Z]   ================================================================================
+[2025-10-05T21:51:45Z]   S3 changes
+[2025-10-05T21:51:45Z]   ================================================================================
+[2025-10-05T21:51:45Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:51:45Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:51:45Z]   
+[2025-10-05T21:51:45Z]   ================================================================================
+[2025-10-05T21:51:45Z]   EC2 Security Group changes
+[2025-10-05T21:51:45Z]   ================================================================================
+[2025-10-05T21:51:45Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:51:45Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:51:45Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:51:45Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:51:45Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:51:45Z]   
+[2025-10-05T21:51:45Z]   Done.
+[2025-10-05T21:51:45Z] --- compare stdout end ---
+[2025-10-05T21:51:45Z] Searching CloudTrail for keywords: Bucket, Done, Group, Security, Snapshots, WARNING, accounts, are, changes, different...
+[2025-10-05T21:51:45Z] No matching CloudTrail events found in the recent window
+[2025-10-05T21:51:45Z] Snapshot count: 2 (retained)
+[2025-10-05T21:52:05Z] No response within 20s; baseline unchanged
+[2025-10-05T21:52:09Z] Captured snapshot: baseline_2025-10-05T21-52-09Z.json
+[2025-10-05T21:52:09Z] Drift detected between baseline_2025-10-05T21-51-45Z.json and baseline_2025-10-05T21-52-09Z.json:
+[2025-10-05T21:52:09Z] --- compare stdout begin ---
+[2025-10-05T21:52:09Z]   
+[2025-10-05T21:52:09Z]   ================================================================================
+[2025-10-05T21:52:09Z]   WARNING
+[2025-10-05T21:52:09Z]   ================================================================================
+[2025-10-05T21:52:09Z]     - Snapshots are from different AWS accounts!
+[2025-10-05T21:52:09Z]   
+[2025-10-05T21:52:09Z]   ================================================================================
+[2025-10-05T21:52:09Z]   S3 changes
+[2025-10-05T21:52:09Z]   ================================================================================
+[2025-10-05T21:52:09Z]     - Bucket added: uhsandbox-bucket-01
+[2025-10-05T21:52:09Z]     - Bucket removed: sandbox-bucket-asa32
+[2025-10-05T21:52:09Z]   
+[2025-10-05T21:52:09Z]   ================================================================================
+[2025-10-05T21:52:09Z]   EC2 Security Group changes
+[2025-10-05T21:52:09Z]   ================================================================================
+[2025-10-05T21:52:09Z]     - SG added: sg-0972d1d5f6ce9f7c8
+[2025-10-05T21:52:09Z]     - SG added: sg-0a5b796cbac5ccc55
+[2025-10-05T21:52:09Z]     - SG added: sg-0d7ca9a3eb96182c0
+[2025-10-05T21:52:09Z]     - SG removed: sg-05d8840964f1070c1
+[2025-10-05T21:52:09Z]     - SG removed: sg-0f0da5ce01c608a03
+[2025-10-05T21:52:09Z]   
+[2025-10-05T21:52:09Z]   Done.
+[2025-10-05T21:52:09Z] --- compare stdout end ---
+[2025-10-05T21:52:09Z] Searching CloudTrail for keywords: Bucket, Done, Group, Security, Snapshots, WARNING, accounts, are, changes, different...
+[2025-10-05T21:52:10Z] No matching CloudTrail events found in the recent window
+[2025-10-05T21:52:10Z] Snapshot count: 3 (retained)
+[2025-10-05T21:52:12Z] Realtime monitor stopped by user

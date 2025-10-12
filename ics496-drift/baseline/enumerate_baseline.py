@@ -1,9 +1,13 @@
-import json, datetime
+#!/usr/bin/env python3
+import json
 import boto3
+import datetime
+from datetime import UTC
 from botocore.exceptions import ClientError
 
-def ts():
-    return datetime.datetime.utcnow().strftime("%Y-%m-%dT%H-%M-%SZ")
+def ts() -> str:
+    # UTC, ISO-like, matches your monitor format: 2025-10-10T23-18-38Z
+    return datetime.datetime.now(UTC).strftime("%Y-%m-%dT%H-%M-%SZ")
 
 def get_account():
     sts = boto3.client("sts")
@@ -39,14 +43,12 @@ def get_iam():
             for pn in iam.list_user_policies(UserName=uname)["PolicyNames"]:
                 user["InlinePolicies"].append(pn)
             users.append(user)
-    # account-level managed policies (names only, optional)
     return {"Users": users}
 
 def safe_call(fn, default=None):
     try:
         return fn()
-    except ClientError as e:
-        # If access denied or not configured, return default
+    except ClientError:
         return default
 
 def get_s3():
@@ -56,7 +58,7 @@ def get_s3():
     for b in buckets:
         name = b["Name"]
         binfo = {"Name": name}
-        # location
+        # location (None means us-east-1)
         loc = safe_call(lambda: s3.get_bucket_location(Bucket=name))
         binfo["Location"] = (loc or {}).get("LocationConstraint")
         # encryption
@@ -84,42 +86,43 @@ def get_ec2_security_groups():
     ec2 = boto3.client("ec2")
     resp = ec2.describe_security_groups()
     sgs = []
-    for sg in resp.get("SecurityGroups", []):
-        def fmt_perms(perms):
-            rules = []
-            for p in perms:
-                proto = p.get("IpProtocol")
-                fromp = p.get("FromPort")
-                top = p.get("ToPort")
-                # IPv4 ranges
-                for r in p.get("IpRanges", []):
-                    rules.append({
-                        "Protocol": proto,
-                        "FromPort": fromp,
-                        "ToPort": top,
-                        "CidrIp": r.get("CidrIp"),
-                        "Desc": r.get("Description"),
-                    })
-                # IPv6 ranges
-                for r in p.get("Ipv6Ranges", []):
-                    rules.append({
-                        "Protocol": proto,
-                        "FromPort": fromp,
-                        "ToPort": top,
-                        "CidrIpv6": r.get("CidrIpv6"),
-                        "Desc": r.get("Description"),
-                    })
-                # referenced SGs
-                for r in p.get("UserIdGroupPairs", []):
-                    rules.append({
-                        "Protocol": proto,
-                        "FromPort": fromp,
-                        "ToPort": top,
-                        "SourceGroupId": r.get("GroupId"),
-                        "Desc": r.get("Description"),
-                    })
-            return rules
 
+    def fmt_perms(perms):
+        rules = []
+        for p in perms:
+            proto = p.get("IpProtocol")
+            fromp = p.get("FromPort")
+            top = p.get("ToPort")
+            # IPv4 ranges
+            for r in p.get("IpRanges", []):
+                rules.append({
+                    "Protocol": proto,
+                    "FromPort": fromp,
+                    "ToPort": top,
+                    "CidrIp": r.get("CidrIp"),
+                    "Desc": r.get("Description"),
+                })
+            # IPv6 ranges
+            for r in p.get("Ipv6Ranges", []):
+                rules.append({
+                    "Protocol": proto,
+                    "FromPort": fromp,
+                    "ToPort": top,
+                    "CidrIpv6": r.get("CidrIpv6"),
+                    "Desc": r.get("Description"),
+                })
+            # referenced SGs
+            for r in p.get("UserIdGroupPairs", []):
+                rules.append({
+                    "Protocol": proto,
+                    "FromPort": fromp,
+                    "ToPort": top,
+                    "SourceGroupId": r.get("GroupId"),
+                    "Desc": r.get("Description"),
+                })
+        return rules
+
+    for sg in resp.get("SecurityGroups", []):
         sgs.append({
             "GroupId": sg.get("GroupId"),
             "GroupName": sg.get("GroupName"),
@@ -144,7 +147,7 @@ def main():
         "s3": get_s3(),
         "ec2": get_ec2_security_groups(),
     }
-    fname = f"baseline_{ts()}.json"
+    fname = f"snapshot_{ts()}.json"  # <-- new prefix
     with open(fname, "w", encoding="utf-8") as f:
         json.dump(snapshot, f, indent=2, sort_keys=True)
     print(f"Wrote {fname}")

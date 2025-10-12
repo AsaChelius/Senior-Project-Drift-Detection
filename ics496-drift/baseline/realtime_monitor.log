@@ -104,3 +104,621 @@
 [2025-09-21T21:16:07Z] --- compare stdout end ---
 [2025-09-21T21:16:07Z] Removed old snapshot: baseline_2025-09-21T20-41-03Z.json
 [2025-09-21T21:16:16Z] Realtime monitor stopped by user
+[2025-10-10T22:46:35Z] Starting realtime monitor (every 20s)
+[2025-10-10T22:46:35Z] Using existing snapshot as previous: baseline_2025-09-21T21-16-07Z.json
+[2025-10-10T22:46:35Z] Found canonical baseline: Baseline.json
+[2025-10-10T22:46:35Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:46:55Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:47:16Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:47:36Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:47:56Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:48:16Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:48:36Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:48:56Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:49:17Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:49:37Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:49:57Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:50:17Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:50:37Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:50:57Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:51:18Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:51:38Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:51:58Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:52:18Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:52:38Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:52:59Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:53:19Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:53:39Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:53:59Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:54:19Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:54:40Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:55:00Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:55:20Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:55:40Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:56:00Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:56:21Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:56:41Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:57:01Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:57:21Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:57:41Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:58:01Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:58:22Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:58:42Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:59:02Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:59:22Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T22:59:42Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T23:00:02Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T23:00:23Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T23:00:43Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T23:01:03Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T23:01:23Z] enumerate_baseline.py failed (rc=9009). stderr: Python was not found; run without arguments to install from the Microsoft Store, or disable this shortcut from Settings > Apps > Advanced app settings > App execution aliases.
+[2025-10-10T23:01:26Z] Realtime monitor stopped by user
+[2025-10-10T23:04:19Z] Starting realtime monitor (every 20s)
+[2025-10-10T23:04:19Z] Using existing snapshot as previous: baseline_2025-09-21T21-16-07Z.json
+[2025-10-10T23:04:19Z] Found canonical baseline: Baseline.json
+[2025-10-10T23:04:26Z] Captured snapshot: baseline_2025-10-10T23-04-26Z.json
+[2025-10-10T23:04:26Z] Drift detected between Baseline.json and baseline_2025-10-10T23-04-26Z.json:
+[2025-10-10T23:04:26Z] --- compare stdout begin ---
+[2025-10-10T23:04:26Z]   
+[2025-10-10T23:04:26Z]   ================================================================================
+[2025-10-10T23:04:26Z]   IAM changes
+[2025-10-10T23:04:26Z]   ================================================================================
+[2025-10-10T23:04:26Z]     - Inline policies changed for sandbox-user:
+[2025-10-10T23:04:26Z]       - was: []
+[2025-10-10T23:04:26Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-10T23:04:26Z]   
+[2025-10-10T23:04:26Z]   ================================================================================
+[2025-10-10T23:04:26Z]   S3 changes
+[2025-10-10T23:04:26Z]   ================================================================================
+[2025-10-10T23:04:26Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-10T23:04:26Z]       - Versioning.Status changed
+[2025-10-10T23:04:26Z]         - was: None
+[2025-10-10T23:04:26Z]         - now: Enabled
+[2025-10-10T23:04:26Z]   
+[2025-10-10T23:04:26Z]   ================================================================================
+[2025-10-10T23:04:26Z]   EC2 Security Group changes
+[2025-10-10T23:04:26Z]   ================================================================================
+[2025-10-10T23:04:26Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-10T23:04:26Z]       - InboundRules changed
+[2025-10-10T23:04:26Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-10T23:04:26Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-10T23:04:26Z]   
+[2025-10-10T23:04:26Z]   Done.
+[2025-10-10T23:04:26Z] --- compare stdout end ---
+[2025-10-10T23:04:26Z] Removed old snapshot: baseline_2025-09-21T20-41-27Z.json
+[2025-10-10T23:04:53Z] Captured snapshot: baseline_2025-10-10T23-04-52Z.json
+[2025-10-10T23:04:53Z] Drift detected between Baseline.json and baseline_2025-10-10T23-04-52Z.json:
+[2025-10-10T23:04:53Z] --- compare stdout begin ---
+[2025-10-10T23:04:53Z]   
+[2025-10-10T23:04:53Z]   ================================================================================
+[2025-10-10T23:04:53Z]   IAM changes
+[2025-10-10T23:04:53Z]   ================================================================================
+[2025-10-10T23:04:53Z]     - Inline policies changed for sandbox-user:
+[2025-10-10T23:04:53Z]       - was: []
+[2025-10-10T23:04:53Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-10T23:04:53Z]   
+[2025-10-10T23:04:53Z]   ================================================================================
+[2025-10-10T23:04:53Z]   S3 changes
+[2025-10-10T23:04:53Z]   ================================================================================
+[2025-10-10T23:04:53Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-10T23:04:53Z]       - Versioning.Status changed
+[2025-10-10T23:04:53Z]         - was: None
+[2025-10-10T23:04:53Z]         - now: Enabled
+[2025-10-10T23:04:53Z]   
+[2025-10-10T23:04:53Z]   ================================================================================
+[2025-10-10T23:04:53Z]   EC2 Security Group changes
+[2025-10-10T23:04:53Z]   ================================================================================
+[2025-10-10T23:04:53Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-10T23:04:53Z]       - InboundRules changed
+[2025-10-10T23:04:53Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-10T23:04:53Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-10T23:04:53Z]   
+[2025-10-10T23:04:53Z]   Done.
+[2025-10-10T23:04:53Z] --- compare stdout end ---
+[2025-10-10T23:04:53Z] Removed old snapshot: baseline_2025-09-21T20-57-12Z.json
+[2025-10-10T23:05:19Z] Captured snapshot: baseline_2025-10-10T23-05-19Z.json
+[2025-10-10T23:05:19Z] Drift detected between Baseline.json and baseline_2025-10-10T23-05-19Z.json:
+[2025-10-10T23:05:19Z] --- compare stdout begin ---
+[2025-10-10T23:05:19Z]   
+[2025-10-10T23:05:19Z]   ================================================================================
+[2025-10-10T23:05:19Z]   IAM changes
+[2025-10-10T23:05:19Z]   ================================================================================
+[2025-10-10T23:05:19Z]     - Inline policies changed for sandbox-user:
+[2025-10-10T23:05:19Z]       - was: []
+[2025-10-10T23:05:19Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-10T23:05:19Z]   
+[2025-10-10T23:05:19Z]   ================================================================================
+[2025-10-10T23:05:19Z]   S3 changes
+[2025-10-10T23:05:19Z]   ================================================================================
+[2025-10-10T23:05:19Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-10T23:05:19Z]       - Versioning.Status changed
+[2025-10-10T23:05:19Z]         - was: None
+[2025-10-10T23:05:19Z]         - now: Enabled
+[2025-10-10T23:05:19Z]   
+[2025-10-10T23:05:19Z]   ================================================================================
+[2025-10-10T23:05:19Z]   EC2 Security Group changes
+[2025-10-10T23:05:19Z]   ================================================================================
+[2025-10-10T23:05:19Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-10T23:05:19Z]       - InboundRules changed
+[2025-10-10T23:05:19Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-10T23:05:19Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-10T23:05:19Z]   
+[2025-10-10T23:05:19Z]   Done.
+[2025-10-10T23:05:19Z] --- compare stdout end ---
+[2025-10-10T23:05:19Z] Removed old snapshot: baseline_2025-09-21T20-57-36Z.json
+[2025-10-10T23:05:26Z] Realtime monitor stopped by user
+[2025-10-10T23-17-19Z] Starting realtime monitor (every 20s)
+[2025-10-10T23-17-19Z] Found canonical baseline: Baseline.json
+[2025-10-10T23-17-26Z] Captured snapshot: baseline_2025-10-10T23-17-25Z.json
+[2025-10-10T23-17-26Z] Drift detected between Baseline.json and baseline_2025-10-10T23-17-25Z.json:
+[2025-10-10T23-17-26Z] --- compare stdout begin ---
+[2025-10-10T23-17-26Z]   
+[2025-10-10T23-17-26Z]   ================================================================================
+[2025-10-10T23-17-26Z]   IAM changes
+[2025-10-10T23-17-26Z]   ================================================================================
+[2025-10-10T23-17-26Z]     - Inline policies changed for sandbox-user:
+[2025-10-10T23-17-26Z]       - was: []
+[2025-10-10T23-17-26Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-10T23-17-26Z]   
+[2025-10-10T23-17-26Z]   ================================================================================
+[2025-10-10T23-17-26Z]   S3 changes
+[2025-10-10T23-17-26Z]   ================================================================================
+[2025-10-10T23-17-26Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-10T23-17-26Z]       - Versioning.Status changed
+[2025-10-10T23-17-26Z]         - was: None
+[2025-10-10T23-17-26Z]         - now: Enabled
+[2025-10-10T23-17-26Z]   
+[2025-10-10T23-17-26Z]   ================================================================================
+[2025-10-10T23-17-26Z]   EC2 Security Group changes
+[2025-10-10T23-17-26Z]   ================================================================================
+[2025-10-10T23-17-26Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-10T23-17-26Z]       - InboundRules changed
+[2025-10-10T23-17-26Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-10T23-17-26Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-10T23-17-26Z]   
+[2025-10-10T23-17-26Z]   Done.
+[2025-10-10T23-17-26Z] --- compare stdout end ---
+[2025-10-10T23-17-52Z] Captured snapshot: baseline_2025-10-10T23-17-52Z.json
+[2025-10-10T23-17-52Z] Drift detected between Baseline.json and baseline_2025-10-10T23-17-52Z.json:
+[2025-10-10T23-17-52Z] --- compare stdout begin ---
+[2025-10-10T23-17-52Z]   
+[2025-10-10T23-17-52Z]   ================================================================================
+[2025-10-10T23-17-52Z]   IAM changes
+[2025-10-10T23-17-52Z]   ================================================================================
+[2025-10-10T23-17-52Z]     - Inline policies changed for sandbox-user:
+[2025-10-10T23-17-52Z]       - was: []
+[2025-10-10T23-17-52Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-10T23-17-52Z]   
+[2025-10-10T23-17-52Z]   ================================================================================
+[2025-10-10T23-17-52Z]   S3 changes
+[2025-10-10T23-17-52Z]   ================================================================================
+[2025-10-10T23-17-52Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-10T23-17-52Z]       - Versioning.Status changed
+[2025-10-10T23-17-52Z]         - was: None
+[2025-10-10T23-17-52Z]         - now: Enabled
+[2025-10-10T23-17-52Z]   
+[2025-10-10T23-17-52Z]   ================================================================================
+[2025-10-10T23-17-52Z]   EC2 Security Group changes
+[2025-10-10T23-17-52Z]   ================================================================================
+[2025-10-10T23-17-52Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-10T23-17-52Z]       - InboundRules changed
+[2025-10-10T23-17-52Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-10T23-17-52Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-10T23-17-52Z]   
+[2025-10-10T23-17-52Z]   Done.
+[2025-10-10T23-17-52Z] --- compare stdout end ---
+[2025-10-10T23-18-13Z] Realtime monitor stopped by user
+[2025-10-10T23-18-32Z] Starting realtime monitor (every 20s)
+[2025-10-10T23-18-32Z] Found canonical baseline: Baseline.json
+[2025-10-10T23-18-38Z] Captured snapshot: baseline_2025-10-10T23-18-38Z.json
+[2025-10-10T23-18-38Z] Drift detected between Baseline.json and baseline_2025-10-10T23-18-38Z.json:
+[2025-10-10T23-18-38Z] --- compare stdout begin ---
+[2025-10-10T23-18-38Z]   
+[2025-10-10T23-18-38Z]   ================================================================================
+[2025-10-10T23-18-38Z]   IAM changes
+[2025-10-10T23-18-38Z]   ================================================================================
+[2025-10-10T23-18-38Z]     - Inline policies changed for sandbox-user:
+[2025-10-10T23-18-38Z]       - was: []
+[2025-10-10T23-18-38Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-10T23-18-38Z]   
+[2025-10-10T23-18-38Z]   ================================================================================
+[2025-10-10T23-18-38Z]   S3 changes
+[2025-10-10T23-18-38Z]   ================================================================================
+[2025-10-10T23-18-38Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-10T23-18-38Z]       - Versioning.Status changed
+[2025-10-10T23-18-38Z]         - was: None
+[2025-10-10T23-18-38Z]         - now: Enabled
+[2025-10-10T23-18-38Z]   
+[2025-10-10T23-18-38Z]   ================================================================================
+[2025-10-10T23-18-38Z]   EC2 Security Group changes
+[2025-10-10T23-18-38Z]   ================================================================================
+[2025-10-10T23-18-38Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-10T23-18-38Z]       - InboundRules changed
+[2025-10-10T23-18-38Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-10T23-18-38Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-10T23-18-38Z]   
+[2025-10-10T23-18-38Z]   Done.
+[2025-10-10T23-18-38Z] --- compare stdout end ---
+[2025-10-10T23-18-43Z] Realtime monitor stopped by user
+[2025-10-12T23-28-05Z] Starting realtime monitor (every 20s)
+[2025-10-12T23-28-05Z] Found canonical baseline: Baseline.json
+[2025-10-12T23-28-12Z] Captured snapshot: snapshot_2025-10-12T23-28-12Z.json
+[2025-10-12T23-28-13Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-28-12Z.json:
+[2025-10-12T23-28-13Z] --- compare stdout begin ---
+[2025-10-12T23-28-13Z]   
+[2025-10-12T23-28-13Z]   ================================================================================
+[2025-10-12T23-28-13Z]   IAM changes
+[2025-10-12T23-28-13Z]   ================================================================================
+[2025-10-12T23-28-13Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-28-13Z]       - was: []
+[2025-10-12T23-28-13Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-28-13Z]   
+[2025-10-12T23-28-13Z]   ================================================================================
+[2025-10-12T23-28-13Z]   S3 changes
+[2025-10-12T23-28-13Z]   ================================================================================
+[2025-10-12T23-28-13Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-28-13Z]       - Versioning.Status changed
+[2025-10-12T23-28-13Z]         - was: None
+[2025-10-12T23-28-13Z]         - now: Enabled
+[2025-10-12T23-28-13Z]   
+[2025-10-12T23-28-13Z]   ================================================================================
+[2025-10-12T23-28-13Z]   EC2 Security Group changes
+[2025-10-12T23-28-13Z]   ================================================================================
+[2025-10-12T23-28-13Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-28-13Z]       - InboundRules changed
+[2025-10-12T23-28-13Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-28-13Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-28-13Z]   
+[2025-10-12T23-28-13Z]   Done.
+[2025-10-12T23-28-13Z] --- compare stdout end ---
+[2025-10-12T23-28-39Z] Captured snapshot: snapshot_2025-10-12T23-28-39Z.json
+[2025-10-12T23-28-39Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-28-39Z.json:
+[2025-10-12T23-28-39Z] --- compare stdout begin ---
+[2025-10-12T23-28-39Z]   
+[2025-10-12T23-28-39Z]   ================================================================================
+[2025-10-12T23-28-39Z]   IAM changes
+[2025-10-12T23-28-39Z]   ================================================================================
+[2025-10-12T23-28-39Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-28-39Z]       - was: []
+[2025-10-12T23-28-39Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-28-39Z]   
+[2025-10-12T23-28-39Z]   ================================================================================
+[2025-10-12T23-28-39Z]   S3 changes
+[2025-10-12T23-28-39Z]   ================================================================================
+[2025-10-12T23-28-39Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-28-39Z]       - Versioning.Status changed
+[2025-10-12T23-28-39Z]         - was: None
+[2025-10-12T23-28-39Z]         - now: Enabled
+[2025-10-12T23-28-39Z]   
+[2025-10-12T23-28-39Z]   ================================================================================
+[2025-10-12T23-28-39Z]   EC2 Security Group changes
+[2025-10-12T23-28-39Z]   ================================================================================
+[2025-10-12T23-28-39Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-28-39Z]       - InboundRules changed
+[2025-10-12T23-28-39Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-28-39Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-28-39Z]   
+[2025-10-12T23-28-39Z]   Done.
+[2025-10-12T23-28-39Z] --- compare stdout end ---
+[2025-10-12T23-29-04Z] Captured snapshot: snapshot_2025-10-12T23-29-04Z.json
+[2025-10-12T23-29-04Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-29-04Z.json:
+[2025-10-12T23-29-04Z] --- compare stdout begin ---
+[2025-10-12T23-29-04Z]   
+[2025-10-12T23-29-04Z]   ================================================================================
+[2025-10-12T23-29-04Z]   IAM changes
+[2025-10-12T23-29-04Z]   ================================================================================
+[2025-10-12T23-29-04Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-29-04Z]       - was: []
+[2025-10-12T23-29-04Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-29-04Z]   
+[2025-10-12T23-29-04Z]   ================================================================================
+[2025-10-12T23-29-04Z]   S3 changes
+[2025-10-12T23-29-04Z]   ================================================================================
+[2025-10-12T23-29-04Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-29-04Z]       - Versioning.Status changed
+[2025-10-12T23-29-04Z]         - was: None
+[2025-10-12T23-29-04Z]         - now: Enabled
+[2025-10-12T23-29-04Z]   
+[2025-10-12T23-29-04Z]   ================================================================================
+[2025-10-12T23-29-04Z]   EC2 Security Group changes
+[2025-10-12T23-29-04Z]   ================================================================================
+[2025-10-12T23-29-04Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-29-04Z]       - InboundRules changed
+[2025-10-12T23-29-04Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-29-04Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-29-04Z]   
+[2025-10-12T23-29-04Z]   Done.
+[2025-10-12T23-29-04Z] --- compare stdout end ---
+[2025-10-12T23-29-21Z] Realtime monitor stopped by user
+[2025-10-12T23-29-32Z] Starting realtime monitor (every 20s)
+[2025-10-12T23-29-32Z] Found canonical baseline: Baseline.json
+[2025-10-12T23-29-38Z] Captured snapshot: snapshot_2025-10-12T23-29-38Z.json
+[2025-10-12T23-29-38Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-29-38Z.json:
+[2025-10-12T23-29-38Z] --- compare stdout begin ---
+[2025-10-12T23-29-38Z]   
+[2025-10-12T23-29-38Z]   ================================================================================
+[2025-10-12T23-29-38Z]   IAM changes
+[2025-10-12T23-29-38Z]   ================================================================================
+[2025-10-12T23-29-38Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-29-38Z]       - was: []
+[2025-10-12T23-29-38Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-29-38Z]   
+[2025-10-12T23-29-38Z]   ================================================================================
+[2025-10-12T23-29-38Z]   S3 changes
+[2025-10-12T23-29-38Z]   ================================================================================
+[2025-10-12T23-29-38Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-29-38Z]       - Versioning.Status changed
+[2025-10-12T23-29-38Z]         - was: None
+[2025-10-12T23-29-38Z]         - now: Enabled
+[2025-10-12T23-29-38Z]   
+[2025-10-12T23-29-38Z]   ================================================================================
+[2025-10-12T23-29-38Z]   EC2 Security Group changes
+[2025-10-12T23-29-38Z]   ================================================================================
+[2025-10-12T23-29-38Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-29-38Z]       - InboundRules changed
+[2025-10-12T23-29-38Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-29-38Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-29-38Z]   
+[2025-10-12T23-29-38Z]   Done.
+[2025-10-12T23-29-38Z] --- compare stdout end ---
+[2025-10-12T23-30-04Z] Captured snapshot: snapshot_2025-10-12T23-30-04Z.json
+[2025-10-12T23-30-04Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-30-04Z.json:
+[2025-10-12T23-30-04Z] --- compare stdout begin ---
+[2025-10-12T23-30-04Z]   
+[2025-10-12T23-30-04Z]   ================================================================================
+[2025-10-12T23-30-04Z]   IAM changes
+[2025-10-12T23-30-04Z]   ================================================================================
+[2025-10-12T23-30-04Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-30-04Z]       - was: []
+[2025-10-12T23-30-04Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-30-04Z]   
+[2025-10-12T23-30-04Z]   ================================================================================
+[2025-10-12T23-30-04Z]   S3 changes
+[2025-10-12T23-30-04Z]   ================================================================================
+[2025-10-12T23-30-04Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-30-04Z]       - Versioning.Status changed
+[2025-10-12T23-30-04Z]         - was: None
+[2025-10-12T23-30-04Z]         - now: Enabled
+[2025-10-12T23-30-04Z]   
+[2025-10-12T23-30-04Z]   ================================================================================
+[2025-10-12T23-30-04Z]   EC2 Security Group changes
+[2025-10-12T23-30-04Z]   ================================================================================
+[2025-10-12T23-30-04Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-30-04Z]       - InboundRules changed
+[2025-10-12T23-30-04Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-30-04Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-30-04Z]   
+[2025-10-12T23-30-04Z]   Done.
+[2025-10-12T23-30-04Z] --- compare stdout end ---
+[2025-10-12T23-30-31Z] Captured snapshot: snapshot_2025-10-12T23-30-31Z.json
+[2025-10-12T23-30-31Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-30-31Z.json:
+[2025-10-12T23-30-31Z] --- compare stdout begin ---
+[2025-10-12T23-30-31Z]   
+[2025-10-12T23-30-31Z]   ================================================================================
+[2025-10-12T23-30-31Z]   IAM changes
+[2025-10-12T23-30-31Z]   ================================================================================
+[2025-10-12T23-30-31Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-30-31Z]       - was: []
+[2025-10-12T23-30-31Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-30-31Z]   
+[2025-10-12T23-30-31Z]   ================================================================================
+[2025-10-12T23-30-31Z]   S3 changes
+[2025-10-12T23-30-31Z]   ================================================================================
+[2025-10-12T23-30-31Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-30-31Z]       - Versioning.Status changed
+[2025-10-12T23-30-31Z]         - was: None
+[2025-10-12T23-30-31Z]         - now: Enabled
+[2025-10-12T23-30-31Z]   
+[2025-10-12T23-30-31Z]   ================================================================================
+[2025-10-12T23-30-31Z]   EC2 Security Group changes
+[2025-10-12T23-30-31Z]   ================================================================================
+[2025-10-12T23-30-31Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-30-31Z]       - InboundRules changed
+[2025-10-12T23-30-31Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-30-31Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-30-31Z]   
+[2025-10-12T23-30-31Z]   Done.
+[2025-10-12T23-30-31Z] --- compare stdout end ---
+[2025-10-12T23-30-56Z] Captured snapshot: snapshot_2025-10-12T23-30-56Z.json
+[2025-10-12T23-30-56Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-30-56Z.json:
+[2025-10-12T23-30-56Z] --- compare stdout begin ---
+[2025-10-12T23-30-56Z]   
+[2025-10-12T23-30-56Z]   ================================================================================
+[2025-10-12T23-30-56Z]   IAM changes
+[2025-10-12T23-30-56Z]   ================================================================================
+[2025-10-12T23-30-56Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-30-56Z]       - was: []
+[2025-10-12T23-30-56Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-30-56Z]   
+[2025-10-12T23-30-56Z]   ================================================================================
+[2025-10-12T23-30-56Z]   S3 changes
+[2025-10-12T23-30-56Z]   ================================================================================
+[2025-10-12T23-30-56Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-30-56Z]       - Versioning.Status changed
+[2025-10-12T23-30-56Z]         - was: None
+[2025-10-12T23-30-56Z]         - now: Enabled
+[2025-10-12T23-30-56Z]   
+[2025-10-12T23-30-56Z]   ================================================================================
+[2025-10-12T23-30-56Z]   EC2 Security Group changes
+[2025-10-12T23-30-56Z]   ================================================================================
+[2025-10-12T23-30-56Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-30-56Z]       - InboundRules changed
+[2025-10-12T23-30-56Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-30-56Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-30-56Z]   
+[2025-10-12T23-30-56Z]   Done.
+[2025-10-12T23-30-56Z] --- compare stdout end ---
+[2025-10-12T23-31-22Z] Captured snapshot: snapshot_2025-10-12T23-31-22Z.json
+[2025-10-12T23-31-22Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-31-22Z.json:
+[2025-10-12T23-31-22Z] --- compare stdout begin ---
+[2025-10-12T23-31-22Z]   
+[2025-10-12T23-31-22Z]   ================================================================================
+[2025-10-12T23-31-22Z]   IAM changes
+[2025-10-12T23-31-22Z]   ================================================================================
+[2025-10-12T23-31-22Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-31-22Z]       - was: []
+[2025-10-12T23-31-22Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-31-22Z]   
+[2025-10-12T23-31-22Z]   ================================================================================
+[2025-10-12T23-31-22Z]   S3 changes
+[2025-10-12T23-31-22Z]   ================================================================================
+[2025-10-12T23-31-22Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-31-22Z]       - Versioning.Status changed
+[2025-10-12T23-31-22Z]         - was: None
+[2025-10-12T23-31-22Z]         - now: Enabled
+[2025-10-12T23-31-22Z]   
+[2025-10-12T23-31-22Z]   ================================================================================
+[2025-10-12T23-31-22Z]   EC2 Security Group changes
+[2025-10-12T23-31-22Z]   ================================================================================
+[2025-10-12T23-31-22Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-31-22Z]       - InboundRules changed
+[2025-10-12T23-31-22Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-31-22Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-31-22Z]   
+[2025-10-12T23-31-22Z]   Done.
+[2025-10-12T23-31-22Z] --- compare stdout end ---
+[2025-10-12T23-31-47Z] Captured snapshot: snapshot_2025-10-12T23-31-47Z.json
+[2025-10-12T23-31-48Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-31-47Z.json:
+[2025-10-12T23-31-48Z] --- compare stdout begin ---
+[2025-10-12T23-31-48Z]   
+[2025-10-12T23-31-48Z]   ================================================================================
+[2025-10-12T23-31-48Z]   IAM changes
+[2025-10-12T23-31-48Z]   ================================================================================
+[2025-10-12T23-31-48Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-31-48Z]       - was: []
+[2025-10-12T23-31-48Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-31-48Z]   
+[2025-10-12T23-31-48Z]   ================================================================================
+[2025-10-12T23-31-48Z]   S3 changes
+[2025-10-12T23-31-48Z]   ================================================================================
+[2025-10-12T23-31-48Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-31-48Z]       - Versioning.Status changed
+[2025-10-12T23-31-48Z]         - was: None
+[2025-10-12T23-31-48Z]         - now: Enabled
+[2025-10-12T23-31-48Z]   
+[2025-10-12T23-31-48Z]   ================================================================================
+[2025-10-12T23-31-48Z]   EC2 Security Group changes
+[2025-10-12T23-31-48Z]   ================================================================================
+[2025-10-12T23-31-48Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-31-48Z]       - InboundRules changed
+[2025-10-12T23-31-48Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-31-48Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-31-48Z]   
+[2025-10-12T23-31-48Z]   Done.
+[2025-10-12T23-31-48Z] --- compare stdout end ---
+[2025-10-12T23-32-14Z] Captured snapshot: snapshot_2025-10-12T23-32-14Z.json
+[2025-10-12T23-32-14Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-32-14Z.json:
+[2025-10-12T23-32-14Z] --- compare stdout begin ---
+[2025-10-12T23-32-14Z]   
+[2025-10-12T23-32-14Z]   ================================================================================
+[2025-10-12T23-32-14Z]   IAM changes
+[2025-10-12T23-32-14Z]   ================================================================================
+[2025-10-12T23-32-14Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-32-14Z]       - was: []
+[2025-10-12T23-32-14Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-32-14Z]   
+[2025-10-12T23-32-14Z]   ================================================================================
+[2025-10-12T23-32-14Z]   S3 changes
+[2025-10-12T23-32-14Z]   ================================================================================
+[2025-10-12T23-32-14Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-32-14Z]       - Versioning.Status changed
+[2025-10-12T23-32-14Z]         - was: None
+[2025-10-12T23-32-14Z]         - now: Enabled
+[2025-10-12T23-32-14Z]   
+[2025-10-12T23-32-14Z]   ================================================================================
+[2025-10-12T23-32-14Z]   EC2 Security Group changes
+[2025-10-12T23-32-14Z]   ================================================================================
+[2025-10-12T23-32-14Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-32-14Z]       - InboundRules changed
+[2025-10-12T23-32-14Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-32-14Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-32-14Z]   
+[2025-10-12T23-32-14Z]   Done.
+[2025-10-12T23-32-14Z] --- compare stdout end ---
+[2025-10-12T23-32-40Z] Captured snapshot: snapshot_2025-10-12T23-32-40Z.json
+[2025-10-12T23-32-40Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-32-40Z.json:
+[2025-10-12T23-32-40Z] --- compare stdout begin ---
+[2025-10-12T23-32-40Z]   
+[2025-10-12T23-32-40Z]   ================================================================================
+[2025-10-12T23-32-40Z]   IAM changes
+[2025-10-12T23-32-40Z]   ================================================================================
+[2025-10-12T23-32-40Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-32-40Z]       - was: []
+[2025-10-12T23-32-40Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-32-40Z]   
+[2025-10-12T23-32-40Z]   ================================================================================
+[2025-10-12T23-32-40Z]   S3 changes
+[2025-10-12T23-32-40Z]   ================================================================================
+[2025-10-12T23-32-40Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-32-40Z]       - Versioning.Status changed
+[2025-10-12T23-32-40Z]         - was: None
+[2025-10-12T23-32-40Z]         - now: Enabled
+[2025-10-12T23-32-40Z]   
+[2025-10-12T23-32-40Z]   ================================================================================
+[2025-10-12T23-32-40Z]   EC2 Security Group changes
+[2025-10-12T23-32-40Z]   ================================================================================
+[2025-10-12T23-32-40Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-32-40Z]       - InboundRules changed
+[2025-10-12T23-32-40Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-32-40Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-32-40Z]   
+[2025-10-12T23-32-40Z]   Done.
+[2025-10-12T23-32-40Z] --- compare stdout end ---
+[2025-10-12T23-33-06Z] Captured snapshot: snapshot_2025-10-12T23-33-06Z.json
+[2025-10-12T23-33-06Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-33-06Z.json:
+[2025-10-12T23-33-06Z] --- compare stdout begin ---
+[2025-10-12T23-33-06Z]   
+[2025-10-12T23-33-06Z]   ================================================================================
+[2025-10-12T23-33-06Z]   IAM changes
+[2025-10-12T23-33-06Z]   ================================================================================
+[2025-10-12T23-33-06Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-33-06Z]       - was: []
+[2025-10-12T23-33-06Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-33-06Z]   
+[2025-10-12T23-33-06Z]   ================================================================================
+[2025-10-12T23-33-06Z]   S3 changes
+[2025-10-12T23-33-06Z]   ================================================================================
+[2025-10-12T23-33-06Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-33-06Z]       - Versioning.Status changed
+[2025-10-12T23-33-06Z]         - was: None
+[2025-10-12T23-33-06Z]         - now: Enabled
+[2025-10-12T23-33-06Z]   
+[2025-10-12T23-33-06Z]   ================================================================================
+[2025-10-12T23-33-06Z]   EC2 Security Group changes
+[2025-10-12T23-33-06Z]   ================================================================================
+[2025-10-12T23-33-06Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-33-06Z]       - InboundRules changed
+[2025-10-12T23-33-06Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-33-06Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-33-06Z]   
+[2025-10-12T23-33-06Z]   Done.
+[2025-10-12T23-33-06Z] --- compare stdout end ---
+[2025-10-12T23-33-32Z] Captured snapshot: snapshot_2025-10-12T23-33-32Z.json
+[2025-10-12T23-33-32Z] Drift detected between Baseline.json and snapshot_2025-10-12T23-33-32Z.json:
+[2025-10-12T23-33-32Z] --- compare stdout begin ---
+[2025-10-12T23-33-32Z]   
+[2025-10-12T23-33-32Z]   ================================================================================
+[2025-10-12T23-33-32Z]   IAM changes
+[2025-10-12T23-33-32Z]   ================================================================================
+[2025-10-12T23-33-32Z]     - Inline policies changed for sandbox-user:
+[2025-10-12T23-33-32Z]       - was: []
+[2025-10-12T23-33-32Z]       - now: ['DemoInlineLeastPriv', 'Inline-Change-Policy']
+[2025-10-12T23-33-32Z]   
+[2025-10-12T23-33-32Z]   ================================================================================
+[2025-10-12T23-33-32Z]   S3 changes
+[2025-10-12T23-33-32Z]   ================================================================================
+[2025-10-12T23-33-32Z]     - Bucket modified: sandbox-bucket-asa32
+[2025-10-12T23-33-32Z]       - Versioning.Status changed
+[2025-10-12T23-33-32Z]         - was: None
+[2025-10-12T23-33-32Z]         - now: Enabled
+[2025-10-12T23-33-32Z]   
+[2025-10-12T23-33-32Z]   ================================================================================
+[2025-10-12T23-33-32Z]   EC2 Security Group changes
+[2025-10-12T23-33-32Z]   ================================================================================
+[2025-10-12T23-33-32Z]     - SG modified: sg-05d8840964f1070c1
+[2025-10-12T23-33-32Z]       - InboundRules changed
+[2025-10-12T23-33-32Z]         - was: [('tcp', 22, 22, '72.130.155.122/32', None, None, None)]
+[2025-10-12T23-33-32Z]         - now: [('tcp', 80, 80, '0.0.0.0/0', None, None, None)]
+[2025-10-12T23-33-32Z]   
+[2025-10-12T23-33-32Z]   Done.
+[2025-10-12T23-33-32Z] --- compare stdout end ---

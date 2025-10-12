@@ -6,7 +6,7 @@ from typing import List, Dict
 
 def find_events_for_keywords(keywords: List[str], start_time, end_time, event_names: List[str] = None, max_results: int = 200) -> List[Dict]:
     """Lookup CloudTrail events in the given time window and return events that contain any of the keywords.
-
+        TENTATIVE TO CHANGE - angello 10-5-25
     - keywords: list of strings to search for in the CloudTrailEvent JSON payload
     - start_time, end_time: datetime objects (UTC)
     - event_names: optional list of event names to restrict LookupEvents

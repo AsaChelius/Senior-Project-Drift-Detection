@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """
-TENTATIVE TO CHANGE - angello 9-21-25
+TENTATIVE TO CHANGE - angello 10-5-25
 IMPORTANT NOTES OF THIS APPLICAITON.
 
 This script expects to be run from the baseline directory and will call
 `enumerate_baseline.py` to produce snapshot files. It will then call
 `compare_baseline.py` to compare the previous snapshot with the new one. Any
 non-empty output is logged to `realtime_monitor.log` along with a timestamp.
+
+Also will produce CloudTrail searches for the events pertaining to the drift. (Time, eventName, userIdentity, sourceIPAdress, userAgent, plus the full event JSON)
 
 - Make sure `boto3` is installed and AWS credentials are configured.
 """

@@ -120,8 +120,3 @@ Deeper integration with CloudTrail and GuardDuty
 
 RBAC, session auditing, and hardened architecture for DoD use cases
 
-🏢 Sponsor
-
-Naval Information Warfare Center (NIWC) Atlantic
-Sponsor POC: Jesse Auer (jesse.auer@core4ce.com
-)

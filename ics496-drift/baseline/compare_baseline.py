@@ -157,10 +157,21 @@ def compare_ec2_sg(a: Dict[str, Any], b: Dict[str, Any]):
 
     if added or removed or changed:
         header("EC2 Security Group changes")
-        for gid in added:   bullet(f"SG added: {gid}")
-        for gid in removed: bullet(f"SG removed: {gid}")
+        for gid in added:
+            sg = b_sgs[gid]
+            name = sg.get("GroupName", "N/A")
+            desc = sg.get("Description", "N/A")
+            bullet(f"SG added: {name} ({gid}) - {desc}")
+        for gid in removed:
+            sg = a_sgs[gid]
+            name = sg.get("GroupName", "N/A")
+            desc = sg.get("Description", "N/A")
+            bullet(f"SG removed: {name} ({gid}) - {desc}")
         for gid, diffs in changed:
-            bullet(f"SG modified: {gid}")
+            sg = a_sgs[gid]
+            name = sg.get("GroupName", "N/A")
+            desc = sg.get("Description", "N/A")
+            bullet(f"SG modified: {name} ({gid}) - {desc}")
             for (field, old, new) in diffs:
                 bullet(f"{field} changed", level=2)
                 bullet(f"was: {old}", level=3)

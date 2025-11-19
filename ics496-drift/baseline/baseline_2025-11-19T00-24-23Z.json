@@ -1,0 +1,96 @@
+{
+  "ec2": {
+    "SecurityGroups": [
+      {
+        "Description": "default VPC security group",
+        "GroupId": "sg-0bba40ce104f746b6",
+        "GroupName": "default",
+        "InboundRules": [
+          {
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "SourceGroupId": "sg-0bba40ce104f746b6",
+            "ToPort": null
+          }
+        ],
+        "OutboundRules": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Desc": null,
+            "FromPort": null,
+            "Protocol": "-1",
+            "ToPort": null
+          }
+        ],
+        "Tags": {},
+        "VpcId": "vpc-0bc1430b33f3cd0ff"
+      }
+    ]
+  },
+  "iam": {
+    "Users": [
+      {
+        "Arn": "arn:aws:iam::987042257148:user/Test",
+        "AttachedPolicies": [
+          "arn:aws:iam::aws:policy/SecurityAudit"
+        ],
+        "CreateDate": "2025-09-14T19:34:56Z",
+        "Groups": [],
+        "InlinePolicies": [],
+        "UserName": "Test"
+      }
+    ]
+  },
+  "identity": {
+    "account_id": "987042257148",
+    "arn": "arn:aws:iam::987042257148:user/Test",
+    "user_id": "AIDA6LUCNTD6GATW2B7NY"
+  },
+  "meta": {
+    "captured_at_utc": "2025-11-19T00-24-19Z",
+    "service_versions": {
+      "boto3": "1.40.76"
+    }
+  },
+  "s3": {
+    "Buckets": [
+      {
+        "Encryption": {
+          "Rules": [
+            {
+              "ApplyServerSideEncryptionByDefault": {
+                "SSEAlgorithm": "AES256"
+              },
+              "BucketKeyEnabled": true
+            }
+          ]
+        },
+        "Location": null,
+        "Name": "uhsandbox-bucket-01",
+        "Policy": null,
+        "PublicAccessBlock": {
+          "BlockPublicAcls": true,
+          "BlockPublicPolicy": true,
+          "IgnorePublicAcls": true,
+          "RestrictPublicBuckets": true
+        },
+        "Versioning": {
+          "ResponseMetadata": {
+            "HTTPHeaders": {
+              "date": "Wed, 19 Nov 2025 00:24:24 GMT",
+              "server": "AmazonS3",
+              "transfer-encoding": "chunked",
+              "x-amz-id-2": "coYURP+2dAUNfn8fE/fHOKx6oYQfujS5nUjYa8c9fsS9xAqAkH24ke6e42GvhNsyVym2y/DghF0=",
+              "x-amz-request-id": "C1B50MCWN2ADH4XA"
+            },
+            "HTTPStatusCode": 200,
+            "HostId": "coYURP+2dAUNfn8fE/fHOKx6oYQfujS5nUjYa8c9fsS9xAqAkH24ke6e42GvhNsyVym2y/DghF0=",
+            "RequestId": "C1B50MCWN2ADH4XA",
+            "RetryAttempts": 0
+          }
+        }
+      }
+    ]
+  }
+}
